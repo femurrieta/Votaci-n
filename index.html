@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Encuesta de Gustos Personales</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      margin: 30px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #3399ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #267acc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Encuesta de Gustos Personales</h1>
+
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre">
+
+    <label for="pasatiempos">¿Cuáles son tus pasatiempos?</label>
+    <textarea id="pasatiempos" name="pasatiempos"></textarea>
+
+    <label for="vestimenta">¿Qué tipo de vestimenta prefieres?</label>
+    <select id="vestimenta" name="vestimenta">
+      <option value="casual">Casual</option>
+      <option value="formal">Formal</option>
+      <option value="deportiva">Deportiva</option>
+      <option value="alternativa">Alternativa</option>
+    </select>
+
+    <label for="musica">¿Cuál es tu tipo de música favorita?</label>
+    <input type="text" id="musica" name="musica">
+
+    <label for="animal">¿Cuál es tu animal favorito?</label>
+    <input type="text" id="animal" name="animal">
+
+    <label for="pelicula">¿Cuál es tu película favorita?</label>
+    <input type="text" id="pelicula" name="pelicula">
+
+    <label for="comentarios">Comentarios adicionales:</label>
+    <textarea id="comentarios" name="comentarios"></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
